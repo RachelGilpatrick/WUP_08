@@ -35,6 +35,8 @@ predict(simp,new,se.fit=TRUE,interval = "prediction")
 
 ## NUMERICAL SUMMARY
 
+
+
 ```{r}
 cor(bears$LENGTH,bears$NECK)
 ```
@@ -49,3 +51,10 @@ abline(simp)
 summary.lm(simp)
 ```
 
+```{r}
+cor(bears$LENGTH,bears$CHEST)
+```
+
+## Conclusion
+
+Chest is a better predictor of length than neck, because the adjusted R squared of the fit for CHEST was larger than the adjusted R squared of the fit for neck.
